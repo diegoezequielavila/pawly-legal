@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAWLY™ — Términos y Condiciones | Política de Privacidad</title>
+  <style>
+    :root {
+      --bg: #FAFAFA;
+      --primary: #1B3A6B;
+      --text: #1A1A2E;
+      --text-secondary: #8892A4;
+      --border: #F0F2F5;
+      --white: #FFFFFF;
+      --warning: #E67E22;
+      --warning-bg: #FEF5EE;
+      --max-width: 800px;
+      --padding-desk: 40px;
+      --padding-mobile: 20px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    .header {
+      background: var(--primary);
+      color: var(--white);
+      padding: 20px var(--padding-desk);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .header-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .logo-emoji { font-size: 1.75rem; }
+
+    .badge-inpi {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(255,255,255,0.2);
+      color: var(--white);
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 20px;
+      letter-spacing: 0.02em;
+    }
+
+    /* Nav */
+    .nav {
+      display: flex;
+      gap: 8px;
+    }
+
+    .nav a {
+      color: rgba(255,255,255,0.95);
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 12px;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .nav a:hover {
+      background: rgba(255,255,255,0.15);
+      color: var(--white);
+    }
+
+    /* Main */
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: var(--padding-desk);
+    }
+
+    @media (max-width: 640px) {
+      .header { padding: 16px var(--padding-mobile); }
+      main { padding: var(--padding-mobile); }
+    }
+
+    section {
+      margin-bottom: 48px;
+    }
+
+    section:target { scroll-margin-top: 80px; }
+
+    .section-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: -0.02em;
+      margin: 0 0 8px 0;
+    }
+
+    .section-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      margin: 0 0 20px 0;
+    }
+
+    .section-meta {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+    }
+
+    /* Aviso con borde naranja */
+    .notice-warning {
+      background: var(--warning-bg);
+      border: 2px solid var(--warning);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin: 20px 0;
+      color: var(--text);
+    }
+
+    .notice-warning strong { color: var(--warning); }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin: 28px 0 12px 0;
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    h2 .section-num {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    h2:first-of-type { margin-top: 0; }
+
+    p {
+      margin: 0 0 12px 0;
+      color: var(--text);
+    }
+
+    ul {
+      margin: 0 0 16px 0;
+      padding-left: 1.5rem;
+    }
+
+    li { margin-bottom: 6px; }
+
+    .highlight {
+      background: var(--white);
+      border-left: 4px solid var(--primary);
+      padding: 14px 18px;
+      margin: 16px 0;
+      border-radius: 0 12px 12px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    /* Tabla comisiones */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 16px 0;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--white);
+      font-size: 0.95rem;
+    }
+
+    th, td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      background: var(--primary);
+      color: var(--white);
+      font-weight: 600;
+    }
+
+    tr:last-child td { border-bottom: none; }
+
+    tr:hover td { background: var(--bg); }
+
+    .section-footer {
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      text-align: center;
+    }
+
+    /* Botón volver arriba */
+    .back-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: var(--white);
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      box-shadow: 0 4px 12px rgba(27,58,107,0.35);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
+      z-index: 5;
+    }
+
+    .back-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .back-top:hover {
+      transform: translateY(-2px);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 32px var(--padding-desk);
+      border-top: 1px solid var(--border);
+      margin-top: 48px;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    footer p { margin: 4px 0; }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo-wrap">
+        <div class="logo">
+          <span class="logo-emoji">🐾</span>
+          <span>Pawly</span>
+        </div>
+        <span class="badge-inpi">INPI Registrado™</span>
+      </div>
+      <nav class="nav">
+        <a href="#terminos">Términos y Condiciones</a>
+        <a href="#privacidad">Política de Privacidad</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="terminos">
+      <h1 class="section-title">PAWLY™ — Términos y Condiciones de Uso</h1>
+      <p class="section-subtitle">Versión 1.0 | Tucumán, Argentina — Marzo 2026</p>
+
+      <div class="notice-warning">
+        <strong>⚠️</strong> Estos Términos y Condiciones regulan el uso de la plataforma Pawly. Al registrarse o utilizar la aplicación, el usuario acepta íntegramente las condiciones aquí establecidas.
+      </div>
+
+      <h2><span class="section-num">§1.</span> Identificación del Servicio</h2>
+      <p>Pawly es una plataforma digital de intermediación que conecta a dueños de mascotas con paseadores independientes. Operada por Diego Ezequiel Ávila (CUIT 20399756139), San Miguel 237, Banda del Río Salí, Tucumán, Argentina.</p>
+      <p>Pawly actúa exclusivamente como intermediario tecnológico.</p>
+
+      <h2><span class="section-num">§2.</span> Aceptación de los Términos</h2>
+      <p>El acceso implica aceptación plena de estos TyC y la Política de Privacidad. Pawly puede modificar estos Términos con 7 días de anticipación notificados por la app.</p>
+
+      <h2><span class="section-num">§3.</span> Condiciones de Registro</h2>
+      <p><strong>3.1 Requisitos generales:</strong></p>
+      <ul>
+        <li>Mayor de 18 años</li>
+        <li>Información veraz y actualizada</li>
+        <li>Email válido y teléfono activo</li>
+        <li>Aceptar tratamiento de datos (Ley 25.326)</li>
+      </ul>
+      <p><strong>3.2 Registro de Paseadores (adicional):</strong></p>
+      <ul>
+        <li>DNI vigente para verificación de identidad</li>
+        <li>Proceso de verificación de Pawly</li>
+        <li>Aceptar Contrato como trabajador independiente</li>
+        <li>Sin antecedentes de maltrato animal</li>
+      </ul>
+
+      <h2><span class="section-num">§4.</span> Naturaleza de la Relación</h2>
+      <p>Los Paseadores son trabajadores independientes y autónomos. No existe relación de dependencia laboral con Pawly. Consistente con la Reforma Laboral 2026.</p>
+
+      <h2><span class="section-num">§5.</span> Responsabilidades y Limitaciones</h2>
+      <p><strong>5.1 Pawly es responsable de:</strong></p>
+      <ul>
+        <li>Plataforma tecnológica operativa</li>
+        <li>Verificación de identidad de Paseadores</li>
+        <li>GPS en tiempo real durante paseos activos</li>
+        <li>Sistema de calificaciones y reseñas</li>
+        <li>Gestión de pagos</li>
+      </ul>
+      <p><strong>5.2 Pawly NO es responsable de:</strong></p>
+      <ul>
+        <li>Daños o lesiones causadas por Paseadores</li>
+        <li>Accidentes de la mascota durante el paseo</li>
+        <li>Daños a terceros causados por la mascota</li>
+        <li>Incumplimientos de los Paseadores</li>
+      </ul>
+      <p><strong>5.3 Responsabilidad de los Dueños:</strong></p>
+      <ul>
+        <li>Informar verazmente estado de salud y temperamento</li>
+        <li>Declarar historial de agresividad o enfermedades</li>
+        <li>Mantener vacunas al día</li>
+        <li>El comportamiento de su mascota</li>
+      </ul>
+      <p><strong>5.4 Responsabilidad de los Paseadores:</strong></p>
+      <ul>
+        <li>Correcta prestación del servicio</li>
+        <li>Cuidado diligente de la mascota</li>
+        <li>Informar inmediatamente cualquier incidente</li>
+        <li>Daños por negligencia o impericia</li>
+      </ul>
+
+      <h2><span class="section-num">§6.</span> Pagos y Comisiones</h2>
+      <p>Pawly retiene una comisión sobre cada servicio. Los pagos se procesan a través de MercadoPago. Pawly no almacena datos de tarjetas.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Concepto</th>
+              <th>Comisión Pawly</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Por cada servicio de paseo</td>
+              <td>20% a 25%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="notice-warning">
+        <strong>⚠️</strong> No se realizarán reembolsos por servicios completados satisfactoriamente.
+      </div>
+
+      <h2><span class="section-num">§7.</span> Sistema de Calificaciones</h2>
+      <p>Sistema de 1 a 5 estrellas. Un Paseador con 3 calificaciones de 1 estrella podrá ser suspendido o dado de baja definitiva. Las reseñas deben ser verídicas.</p>
+
+      <h2><span class="section-num">§8.</span> GPS y Privacidad durante el Paseo</h2>
+      <p>La ubicación GPS del Paseador es visible en tiempo real SOLO para el Dueño durante el paseo activo. No se almacena permanentemente ni se comparte con terceros. El Paseador consiente expresamente el seguimiento al aceptar un servicio.</p>
+
+      <h2><span class="section-num">§9.</span> Protección de Datos Personales</h2>
+      <p>Conforme a la Ley 25.326. Datos recopilados: nombre, DNI, teléfono, email, domicilio, foto de perfil y geolocalización durante servicio activo.</p>
+      <div class="notice-warning">
+        <strong>⚠️</strong> La DIRECCIÓN NACIONAL DE PROTECCIÓN DE DATOS PERSONALES tiene atribución de atender denuncias sobre incumplimientos.
+      </div>
+
+      <h2><span class="section-num">§10.</span> Conducta Prohibida</h2>
+      <ul>
+        <li>Información falsa al registrarse</li>
+        <li>Transacciones fuera de la plataforma</li>
+        <li>Maltrato o abandono de mascotas</li>
+        <li>Actividades ilegales</li>
+        <li>Acoso o discriminación</li>
+        <li>Acceso no autorizado a sistemas de Pawly</li>
+      </ul>
+      <p>Incumplimiento genera suspensión o baja definitiva.</p>
+
+      <h2><span class="section-num">§11.</span> Suspensión y Cancelación de Cuentas</h2>
+      <p>Pawly puede suspender sin previo aviso por:</p>
+      <ul>
+        <li>Violación de TyC</li>
+        <li>Riesgo para mascotas o usuarios</li>
+        <li>Tres calificaciones de 1 estrella</li>
+        <li>Fraude o identidad falsa</li>
+      </ul>
+      <p>El usuario puede solicitar revisión dentro de 10 días hábiles.</p>
+
+      <h2><span class="section-num">§12.</span> Propiedad Intelectual</h2>
+      <p>La marca PAWLY™ y todos los contenidos son propiedad de Diego Ezequiel Ávila. En proceso de registro ante INPI en Clases 42 y 44, con fecha de prioridad 11/03/2026. Prohibida la reproducción sin autorización expresa.</p>
+
+      <h2><span class="section-num">§13.</span> Modificaciones al Servicio</h2>
+      <p>Pawly puede modificar o discontinuar el servicio en cualquier momento sin responsabilidad frente a los usuarios.</p>
+
+      <h2><span class="section-num">§14.</span> Jurisdicción y Ley Aplicable</h2>
+      <p>Legislación de la República Argentina. Tribunales Ordinarios de la Provincia de Tucumán.</p>
+
+      <h2><span class="section-num">§15.</span> Contacto</h2>
+      <p>Email: <a href="mailto:diegoezequielavila95@gmail.com">diegoezequielavila95@gmail.com</a></p>
+      <p>Sección "Ayuda" en la app</p>
+      <p>Instagram: <a href="https://instagram.com/pawly.tucuman" target="_blank" rel="noopener">@pawly.tucuman</a></p>
+
+      <p class="section-footer">Pawly™ — Tu paseador de confianza<br>Tucumán, Argentina — Marzo 2026</p>
+    </section>
+
+    <section id="privacidad">
+      <h1 class="section-title">Política de Privacidad</h1>
+      <p class="section-meta">Última actualización: marzo 2026</p>
+
+      <h2><span class="section-num">§1.</span> Datos que recopilamos</h2>
+      <ul>
+        <li>Nombre completo y email (registro)</li>
+        <li>Número de teléfono</li>
+        <li>Fotografía de perfil</li>
+        <li>Ubicación GPS (solo durante el paseo activo)</li>
+        <li>Información de mascotas declarada por el dueño</li>
+        <li>Historial de paseos y transacciones</li>
+        <li>DNI del paseador (solo para verificación)</li>
+      </ul>
+
+      <h2><span class="section-num">§2.</span> Uso de los datos</h2>
+      <ul>
+        <li>Conectar dueños con paseadores</li>
+        <li>Procesar pagos de forma segura (comisión del 20% al 25% por servicio)</li>
+        <li>Mostrar ubicación en tiempo real durante el paseo</li>
+        <li>Mejorar el servicio y la experiencia</li>
+        <li>Enviar notificaciones relacionadas al servicio</li>
+      </ul>
+
+      <h2><span class="section-num">§3.</span> Compartición de datos</h2>
+      <p>Solo compartimos datos con:</p>
+      <ul>
+        <li>El paseador o dueño con quien coordinás un servicio</li>
+        <li>MercadoPago (procesamiento de pagos)</li>
+        <li>Firebase/Google (infraestructura)</li>
+      </ul>
+      <p class="highlight">NO vendemos ni compartimos datos con terceros con fines comerciales.</p>
+
+      <h2><span class="section-num">§4.</span> Ubicación GPS</h2>
+      <p>El GPS se activa SOLO durante un paseo activo. El dueño puede ver la ubicación del paseador en tiempo real. Los datos de ubicación no se almacenan permanentemente.</p>
+
+      <h2><span class="section-num">§5.</span> Derechos del usuario (ARCO)</h2>
+      <p>Conforme a la Ley 25.326 (Argentina), tenés derecho a:</p>
+      <ul>
+        <li>Acceder a tus datos personales</li>
+        <li>Rectificar datos incorrectos</li>
+        <li>Cancelar tu cuenta y datos (derecho al olvido)</li>
+        <li>Oponerte al tratamiento de tus datos</li>
+      </ul>
+      <p>Para ejercer derechos ARCO escribí a: <a href="mailto:diegoezequielavila95@gmail.com">diegoezequielavila95@gmail.com</a></p>
+
+      <h2><span class="section-num">§6.</span> Seguridad</h2>
+      <p>Los datos se almacenan en servidores de Google Firebase con encriptación en tránsito y en reposo.</p>
+
+      <h2><span class="section-num">§7.</span> Menores</h2>
+      <p>Pawly no está dirigida a menores de 18 años. No recopilamos datos de menores conscientemente.</p>
+
+      <h2><span class="section-num">§8.</span> Cambios en esta política</h2>
+      <p>Te notificaremos por email ante cambios importantes. El uso continuado implica aceptación.</p>
+
+      <h2><span class="section-num">§9.</span> Contacto</h2>
+      <p>Email: <a href="mailto:diegoezequielavila95@gmail.com">diegoezequielavila95@gmail.com</a></p>
+      <p>Ubicación: Tucumán, Argentina</p>
+      <p>Instagram: <a href="https://instagram.com/pawly.tucuman" target="_blank" rel="noopener">@pawly.tucuman</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Pawly Services. Todos los derechos reservados.</p>
+    <p>Tucumán, Argentina | <a href="mailto:diegoezequielavila95@gmail.com">diegoezequielavila95@gmail.com</a> | <a href="https://instagram.com/pawly.tucuman" target="_blank" rel="noopener">@pawly.tucuman</a></p>
+  </footer>
+
+  <button class="back-top" id="backTop" title="Volver arriba" aria-label="Volver arriba">↑</button>
+
+  <script>
+    (function() {
+      var backTop = document.getElementById('backTop');
+      function toggleBackTop() {
+        backTop.classList.toggle('visible', window.scrollY > 400);
+      }
+      window.addEventListener('scroll', toggleBackTop);
+      backTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+  </script>
+</body>
+</html>
